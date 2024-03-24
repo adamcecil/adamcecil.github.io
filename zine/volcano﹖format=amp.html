@@ -1,0 +1,459 @@
+<!doctype html>
+<html amp>
+<head>
+  <title>Volcano</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+  <link rel="canonical" href="http://www.thingscreatedbypeople.com/zine/volcano">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+  <style amp-custom>/* @group type scale */
+
+body {
+  font-size: 1em;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+p, ul, ol, blockquote {
+  margin-top: 1.45em;
+  margin-bottom: 1.45em;
+}
+
+blockquote {
+  font-style: italic;
+  color: #888;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1.414em;
+  border-left: 1px solid #eee;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  color: #111;
+}
+
+h1 {
+  font-size: 2.074em;
+}
+
+h2 {
+  font-size: 1.728em;
+}
+
+h3 {
+  font-size: 1.44em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+blockquote,
+.amp-article-quote-block-source,
+.amp-article-original-source {
+  font-size: 0.833em;
+}
+
+.amp-article-image-caption p,
+.amp-article-video-caption p,
+.amp-article-audio-caption p,
+.amp-article-pubdate,
+.amp-article-author-name {
+  font-size: 0.694em;
+  letter-spacing: 0;
+}
+
+.tiny-font {
+  font-size: 0.579em;
+}
+
+/* @group end */
+
+/* @group general */
+
+body {
+  background: #f2f2f2;
+  font-family: "Avenir Next", Avenir, Roboto, "Segoe WP", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.0125em;
+  line-height: 1.45;
+  color: #666;
+}
+
+.website {
+  width: 100vw;
+  max-width: 768px;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+}
+
+.website-header {
+  background: #111;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2vh 4vw;
+  box-sizing: border-box;
+  max-height: 12vh;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 0.833em;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #f7f7f7;
+}
+
+.site-title a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.amp-view-original {
+  font-size: 0.579em;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: right;
+  white-space: nowrap;
+  color: #666;
+}
+
+.amp-view-original a {
+  color: #666;
+  text-decoration: none;
+}
+
+/* @group end */
+
+/* @group amp article */
+
+.amp-article-content {
+  padding-bottom: 4vh;
+  box-sizing: border-box;
+}
+
+.amp-article-main-image {
+  max-width: 100%;
+}
+
+.amp-article-header {
+  margin-top: 4vh;
+}
+
+.amp-article-header,
+.amp-article-footer,
+.amp-article-html-block,
+.amp-article-markdown-block,
+.amp-article-image-caption,
+.amp-article-video-caption,
+.amp-article-quote-block,
+.amp-article-audio-block,
+.amp-article-embed-block.twitter-tweet {
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.amp-article-title {
+  letter-spacing: -0.0325em;
+}
+
+.amp-article-image-block,
+.amp-article-video-block {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.amp-article-pubdate,
+.amp-article-author-name,
+.amp-article-image-caption,
+.amp-article-video-caption,
+.amp-article-audio-caption,
+.amp-article-quote-block-source {
+  color: #999;
+}
+
+.amp-article-pubdate,
+.amp-article-author-name {
+  display: inline-block;
+  letter-spacing: 0.02em;
+}
+
+.amp-article-pubdate + .amp-article-author-name:before,
+.amp-article-audio-title + .amp-article-audio-author:before {
+  content: ' by ';
+}
+
+.amp-article-audio-title {
+  font-style: italic;
+}
+
+.amp-article-quote-block {
+  margin-top: 1.45em;
+  margin-bottom: 1.45em;
+}
+
+.amp-article-quote-block-text {
+  font-size: 1.2em;
+  font-style: italic;
+  line-height: 1.2;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  border-left-width: 0px;
+}
+
+.amp-article-quote-block-source {
+  margin-top: 0.833em;
+  display: block;
+}
+
+.amp-article-audio-caption p {
+  margin-top: 0.5em;
+  display: block;
+}
+
+amp-img {
+  background-color: #f7f7f7;
+  max-width: 100%;
+}
+
+.amp-article-hr-block {
+  height: 1px;
+  border: none;
+  margin: 2.6em 0;
+  color: #eee;
+  background-color: #eee;
+}
+
+.amp-article-placeholder-block {
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 1.45em;
+  padding: 1.45em;
+  text-align: center;
+}
+
+/* @group end */
+</style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "headline": "Volcano",
+      "mainEntityOfPage": "http://www.thingscreatedbypeople.com",
+      
+      "url": "http://www.thingscreatedbypeople.com/zine/volcano",
+      "author": {
+        "@type": "Person",
+        "name": "Sophie Nau"
+      },
+      "publisher": {
+        "@type": "Organization",
+        
+        "name": "TCBP"
+      },
+      
+      "datePublished": "2018-06-17",
+      "dateModified": "2018-06-17"
+    }
+  </script>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  
+</head>
+<body>
+  <div id="page" class="website">
+
+    <header class="website-header">
+      <h1 class="site-title"><a href="http://www.thingscreatedbypeople.com" target="_blank">TCBP</a></h1>
+      <small class="amp-view-original"><a href="http://www.thingscreatedbypeople.com/zine/volcano" target="_blank">View Original</a></small>
+    </header>
+
+    <article id="content" class="amp-article-content">
+      
+
+      <header class="amp-article-header">
+        <h1 class="amp-article-title">Volcano</h1>
+        <div class="amp-article-meta">
+          <time class="amp-article-pubdate" datetime="2018-06-17">
+            June 17, 2018
+          </time>
+          <small class="amp-article-author-name">Sophie Nau</small>
+        </div>
+      </header>
+
+      
+
+
+
+<div class="amp-article-html-block"><p>36,000 feet up in turbulent air and I’m in an altered state. I follow the no-drinking-12-hours-before-a-flight rule, there are no illegal drugs in my system, but I’m still about to make headlines if I don’t get my prescription ones ASAP.</p>
+<p><em>Okay.&nbsp;</em>I take a deep breath.&nbsp;<em>Where did you leave it?&nbsp;</em>I ask myself, trying to incorporate the step-by-step thought mentality my one-time therapist Paul instructed before prescribing these bad boys. They have to be in my bag. I wouldn’t have forgotten something as important as relief.</p>
+<p>And as I clutch the underside of my jump seat I remember where they are. Back at the hotel in Bali. In someone else’s room.</p>
+<p>No wait, the one in LA. We had a layover. Room service knocked on the door and I had put it on the dresser. And I knew the plastic advertisement for couples massages was blocking it from view so I told myself <em>do not forget</em>, but that post-coital grilled cheese was all I ever wanted. And at 2 AM, drowsy with sleep and cheese I snuck back to my room, terrified my co-worker Susan might open up the door to hers.</p>
+<p>And now, here we are. In-flight service delayed because of choppy air. My Xanax miles away from me by the minute, because I’m enclosed in a metal tube being flung through the air as if it were cast by Zeus himself, my life in the hands of Bob and Frank in the cockpit: men who I’ve seen sprint to the closest bathroom as street kabobs made their introductory stomach groan, men I’ve seen faint at the sight of a bloody bike accident in Ho Chi Man City. And they are pioneering the sky.</p>
+<p>Flight school and common sense taught me that turbulence, even the vertical kind like this, doesn’t bring down planes. Paul taught me that it’s better to let your body ride the chaotic air out, let it shake how the air wants to shake you, pull you back and forth and swing you like a rag doll. But right now that’s only making me feel more out of control, so I look out at the passengers and try to take in their calm. Someone tries to stumble to the bathroom, despite the seat belt sign. Kids are glued to the back-seat screens, enjoying the ride. People flip through political bios and buzz books they bought at the terminal. I feel Frank speed up the plane, and in seconds we are gliding again. I unclench my hands, my eyes sweeping the plane as if stumbling upon a whole new world of safety. Susan looks at me with that concerned mother look she’s so good at. Someone turns on the “flight attendant” call button.&nbsp;</p>
+<p>“Excuse me,” he says, and slips past me as he exits the bathroom. His eyes casually meet mine, like any noncommittal interaction of a stranger, but then his hand brushes my shoulder, and he gives the tiniest little squeeze. I watch him as he takes his business class seat, buckles his seatbelt, and opens the Financial Times to where he left off. His wedding ring is a silver Claddagh band.</p>
+<p>The first time he boarded a flight that I worked, Susan told me his name was Mr. Byrne. Leaning over to pour his coffee, I had said, “Good morning, Mr. Byrne,” in an attempt to impress Susan and the rest of my superiors. Mr. Byrne – salt and pepper hair, well dressed Upper East Sider – looked at me like he didn’t think I could speak. It’s amazing what saying a name can do to somebody.</p>
+<p>Every three weeks, when he makes the flight to Bangkok to oversee the high-rise development his company is building, I start his service with a black coffee and a biscuit. He doesn’t take the complimentary mimosa, and I have to tell new flight attendants not to bother pouring him one. He dips the biscuit in his coffee in between page turns of his newspaper. It takes him over an hour to finish it.</p>
+<p>Mr. Byrne and I are on the same flight schedule. I go to Thailand every three weeks, stay for a few days eating street food and lazing on a beach, then fly home to start the next round of domestic flights. He’s there to build the next tower of Babel. We both stay in the city for roughly the same period of time, but it’s never occurred to me to strike up anything with him outside of work. We’re an aisle-way flirtation, which for some reason feels safer to act out than an actual affair in a country 7000 miles away from home.</p>
+<p>On one of those flights from LA back to New York, as I walked the aisles collecting trash, a man in 11A told me he was thinking about pitching a show on flight attendants. “I’d love to have an interview sometime,” he grinned at me as he tossed his empty coconut water ($5.65 at the Terminal’s health food stall “Green Light”), into my awaiting trash bag. His suede Converse tapped the floor.</p>
+<p>“You know where to find me,” I said, deadpan with a smile, like a puppet on strings. By this time, I was more selective with passenger interactions. Two hours later he had made his way to the back of the plane, where I was perched on a chair and about to dive in to an US Weekly leftover from the flight before.</p>
+<p>“Is now a good time?”</p>
+<p>I kept my feet up on the jump seat across from me so that he wouldn’t sit down. That was when I wasn’t such a wimp in the sky, when I could relax my body. He asked me why I became a flight attendant, what were perks of the job, mining my life for material to make him rich. His voice got low as he asked, “So what about the relationships?”</p>
+<p>“I’ve made a lot of friends,” I answered.</p>
+<p>“Aw come on,” He teased. “You know what I mean.”</p>
+<p>His eyes encouraged me, like a therapist asking me to dig deeper into my inner psyche. I wondered if he noticed the run up my stockings. Another pair I’d have to throw out as soon as we landed. Deeper to the good stuff, the dirt he could polish into diamonds, stamp his name on. I was his story whore for fifteen minutes, before – thankfully – we hit some chop and he was forced, under aviation law, to comply with my insistence that he get back to his seat.</p>
+<p>Sometimes I feel like a very underpaid call girl specializing in ultra-specific fetishes.</p>
+<p><em>I love how you tell me to put my seat forward and buckle my seatbelt.</em></p>
+<p><em>Look how you pour that Folgers coffee into a Styrofoam cup.&nbsp;</em>(Replace with “Starbucks” and “cheap porcelain” for First Class.)</p>
+<p><em>Yes babe, I would like a sanitized pair of headsets.</em></p>
+<p>Then there’s Frank.</p>
+<p>“Well honey,” a lady with a shapeless sweater and still-wet hair said to me as Frank walked past her towards the cockpit. “You’re lucky if that’s who you get to report to every day.”&nbsp;</p>
+<p>Frank isn’t a bad guy for cheating on his wife. He’s a bad guy for cheating on his wife with me. It’s such a clich&eacute;, the flight attendant and pilot tryst. Sometimes chatty passengers will ask us if there are ever any inter-crew affairs, as if our lives played out like an episode of Grey’s Anatomy and they had the right to know what happens. “They could make a reality show about you guys,” one woman said, her fingers peeling back a page in US Weekly. “Maybe you can pitch it when you land,” I said and handed her a bloody Mary. It was the first flight of the day to Los Angeles, back when I used to do that route. “Go for vacation, come back a millionaire,” she laughed. Then she got serious: “But first I’m trying my luck at Price is Right.”</p>
+<p>We land. I breathe. Susan and I roll our luggage through the airport and past the personnel we see every week. “Until our next voyage,” Susan says at the sign indicating left for Air Train and right for Ground Transportation, which she says every time we part ways.</p>
+<p>“Until then,” I reply dutifully, and turn to follow the sign for the Air Train. Susan turns to follow the signs to the curb, where her husband will be waiting to pick her up for their twentieth anniversary.</p>
+<p>But I feel a hand grab my shoulder and turn around, expecting Susan to be there, holding up something I had dropped. It’s not. It’s Frank. And as soon as I see him, he drops his hand, like I’m a hot stove he accidentally touched.</p>
+<p>“Do you want a ride?”</p>
+<p>Forty-five minutes later we’re having sex in my one-bedroom apartment, the air thick with humidity, the sheets a twisted mound at the foot of the bed, like the woven basket of a snake whisperer, a cobra coiled up inside. He finishes first, but he keeps going until I’m satisfied too. He’s thoughtful like that, so it’s not all a clich&eacute;, I guess.</p>
+<p>I curl up next to him, fitting into the crook of his arm. I feel exhausted, too many feelings for one body, too many time zones crossed in such a short amount of time. Sometimes I wonder if we were meant to travel this quickly. Humans adapt, like every other species. Frank strokes my shoulder with his left arm, his right removing the condom, now sagging with excretions. It looks sad and spent. He tosses it in the trashcan in the corner, not quite making it, so that the condom hangs over the edge, a dribble of semen leaking out down the can. “Whoops,” Frank says, and gets up to throw it away. “You have a paper towel?”</p>
+<p>“In the kitchen,” I say, and he walks naked through the tiny apartment. It’s always after the sex, moments like this, that I feel we are truly intimate. Comfortable with me seeing his body, sculpted but with the hint of a dad gut, the soft tummy of a man who has been married for years. This is also a man who runs half marathons, so his wife’s cooking must really be worth it. I try to imagine if I could be that woman, cooking dinner for Frank and the kids, switching off picking up his fifth grader from soccer practice while the other one has flights to London or LA. Adjusting our weeks for longer routes to Bangkok and Singapore, telling the kids that Dad will be home on Sunday, only three more days. Commitment, while wondering if there was some trashy stewardess, bored and desperate, looking to make trouble.</p>
+<p>Frank comes back inside with the towel, wipes the streak of goo on my trashcan with a quick swipe, and then falls back onto the bed. He gives me a shy grin. “I’ve been waiting for this since the LA layover.”</p>
+<p>I smile back at him. “Do you have the Xanax I left in your room?”</p>
+<p>“What Xanax?”</p>
+<p>“The Xanax that I take for anxiety.”</p>
+<p>“Oh, I didn’t know you were on that.” He looks at me, like he’s reevaluating something. “You know, some studies say exercise is the best cure for anxiety.”</p>
+<p>“Noted.” I sit up in bed. “What time are you supposed to be home?” The grin collapses on Frank’s face. He looks up at the ceiling. “By dinner, I told her,” he says. “Guess that’s pretty soon.” He sits up and reaches down to collect his Calvin Kleins from off the floor.</p>
+<p>“Sorry, I didn’t mean to upset you. I don’t want you to leave.”</p>
+<p>“You’re not making me upset.” He tugs his shirt over his head.</p>
+<p>“Don’t go yet.” Pants found underneath the bed. Right leg in.</p>
+<p>“You’re right, though. It’s getting late.” Left leg in.</p>
+<p>“I didn’t say that.”</p>
+<p>“We’ve had a good week together. I gotta get home now.” Belt buckled.</p>
+<p>He kisses me on the forehead. “See you in LA.” He smiles down at me, and I feel exposed being the only one of us who is naked. But I smile back, reaching across the bed to grab my stewardess blouse. He doesn’t wait for me to see him out, just says a soft “Bye” and lets himself out of the apartment. I hear the door close, hear the extra pull of the handle you have to do in order for it to stay in the doorframe. His footsteps silencing as he walks further down the hall towards the stairs.</p>
+<p>I like Frank, I decide. I get up to make something to eat, but there isn’t anything in the fridge to constitute a meal. Even when he acts like he knows better than me, I can’t help but like him, because he feels safe.</p>
+<p>It’s only after he leaves, and I’m alone, do I feel guilty about our affair. Another woman works hard to keep him fed, and I can’t even do that, so why should I get what’s hers? I dig up my back up bottle of Xanax and throw it into my suitcase – perpetually semi-packed – so as not to forget for the weekend.</p>
+<p>I used to love to fly. I even wanted to be a pilot. Until I found myself carrying an extra life and turns out my body couldn’t do it. How could I be responsible carrying 200 more?</p>
+<p>And anyway, serving passengers Coke and prepackaged sandwiches didn’t seem like such a poor second, given all the flying time and low-cost vacations.</p>
+<p>I was pretty young when I started training. I was thinking a lot about the world, like you do at that time, about how I would take a year off after I got up the flight attendant ranks, using my airline status to travel the world on a budget and make real change. Don’t ask me what the details of making “real change” were. Building wells and teaching English? It was unformed and unfair to the people who really did need specific, calculated help – but it was how I felt. And for a while I was having fun: flying around and saying I would make a change after this last Mai Tai.</p>
+<p>When that one plane attack happened, the one where the plane disappeared and everyone assumed dead, I became a nervous wreck. I knew two of the flight attendants on board. Had heard their voices 42 hours before in the airport lounge.</p>
+<p>Now, panic attacks in the bathroom just after take-off were routine. I couldn’t calm my nerves with alcohol without the risk of losing my job, and the job was the only thing that I had. But it was a job that was inciting a mental collapse. I had dreams that my coworker would open the emergency exit door (despite the 8 pounds of pressure preventing a mortal from doing so) and parachute out of our plane mid-flight as a ballsy send off to our airline over insurance cuts. I felt like I was about to be sucked out of the plane and flung into the sky. I was a speck of dirt on a cruel god’s finger. I could feel the aircraft revolting, like it was ready to belch me out. We were going so fast, and we weren’t meant to go so fast.</p>
+<p>I could quit, but then what? Couldn’t be a pilot. Couldn’t be a flight attendant. Was it possible to keep moving down in the ranks? Too fragile to do anything but just stay still?</p>
+<p>That night after Frank leaves I take a walk to a nearby Thai restaurant. I order the Pra-Ram curry and eat at the counter that looks out onto the street. I feel grateful to be planted on stable ground, and I press my feet hard against the footrest. I think about the calm I get from a little pill, the artifice of sedation. Then I walk back home, belly full.</p>
+<p>Across from my apartment is a young family with a toddler, his crib pushed up against the gated window. He stands up on his bare feet and stares down at the side yard between the buildings, slapping his hands against the mesh of the window screen, making it rattle as he yells out to the alleyway four floors down, “Bye! Bye! BYE! BYEE!” Like a faulty alarm declaring an imagined emergency, shooting anxiety down your spine before you remember its defect, the boy yells out to no one. He never sounds upset; he’s not calling for mama or food. His intentions are hauntingly unclear. With limbs long like a preschooler, he’s too big for his crib. I’m not even sure what language he speaks, if he’s really saying, “bye” as in “goodbye,” or another word, or just a sound. Whoever his parents are, they seem content to plop him in front of the window and let him wake up the neighbors.</p>
+<p>I have the urge to open my window and raise my voice, calm but commanding: “Ma’am, I’m going to have to ask you to strap your child in. It’s a safety hazard to have him out of his seat.” But on the ground, aviation law has no jurisdiction. I don’t even have the smidgen of authority begrudged to me by airline passengers more concerned with holding out their used tissues for me to pick up as I walk by.</p>
+<p>On the Big Island in Hawaii, an active volcano casts its shadow over a valley of prehistoric rock. Once, on a layover, I took the two-hour drive to the national park that surrounds it, hiked as far as I was allowed to safely go, and watched this mountain with the rest of the tourists, like we were waiting for it to breathe. It was one of the oldest places in the world, the guidebook said, and if it decided to spew again, we could be dead in minutes. I shuddered to think how insignificant I was. The volcano could hiccup and I would be dead – and was there a place beyond this, older than the volcano and the rock? Somewhere timeless for me to go and still be me? Hope started its slow drip out of me, and panic replaced it.</p>
+<p>“Something bothering you?” Frank sat down across from me with a plate of the Hawaii hotel’s Japanese breakfast.</p>
+<p>“Nothing’s bothering me,” I said, smiling nervously. He was still just my boss who I’d occasionally get a little drunk with on long enough layovers.</p>
+<p>“You’ve been quiet since yesterday. Hope I didn’t say something stupid and offend you. I can be an ass sometimes.” He grinned at me and took a sip of his miso soup, holding the cup with both hands. “I love that I can drink soup in the morning here,” he said. He licked his lips. “So nothing’s wrong?”</p>
+<p>“Nope,” I said.</p>
+<p>“Okay. Don’t say I didn’t ask.”</p>
+<p>“I always liked to fancy myself as hard to read. Guess I was wrong.” I gave him a smile as weak as the tea in my hands. He looked almost relieved.</p>
+<p>“Maybe I’m finally learning a thing or two about women, now with two daughters and a wife.” He looked down into his soup after he said it, dipped his spoon into the miso and sipped it, still not meeting my eyes. He was soft now, and this was my in.</p>
+<p>“Do you ever get scared, flying a plane filled with people?”</p>
+<p>“Was it that bumpy coming over here? You’ve seen worse than that.”</p>
+<p>“No, the flight was fine. I guess I’m asking what made you become a pilot.”</p>
+<p>“I learned in the military. After I got out, I could have gone back to school, gotten a desk job. But I just wanted to fly.”</p>
+<p>“I chickened out of being a pilot,” I said.</p>
+<p>“That’s too bad.”</p>
+<p>That night Frank and I had sex for the first time. He made me feel less scared of the world, because he wasn’t scared. But that only lasted in the minutes I was with him, feeling safe against his warm body, knowing he kept me alive every day that we flew together. Looking back, I wondered if he liked that I was afraid.</p>
+<p>The anxiety didn’t stop once we started seeing each other, but it was abated when we were together. Even when I was on flights that he piloted, I could not stop thinking that still I was giving up control to another human being – someone maybe with experience in the sky, but still a human who can make mistakes, cheat on his wife, have high blood pressure. But knowing he was flying home to a wife and kids, that he wanted to make it out alive too, that helped. Sort of.</p>
+<p>“Hey girl.” It’s Susan on the phone. “I have the biggest favor to ask you.”</p>
+<p>“Shoot,” I say. I’m in the middle of writing my to-do list for the week. It’s a new thing I started, to give myself a sense of accomplishment. So far, I’ve managed to buy a basil plant and keep it alive for three days.</p>
+<p>“Basically, could you cover tomorrow’s shift for me? I asked for the week off, but management screwed up and scheduled me anyway, and it’s my son’s graduation. I just need someone to switch.”</p>
+<p>“It’s totally fine, Sue. I got you covered.”</p>
+<p>“Thanks. It’s just an overnight to Hawaii, lickity-split. I can cover the next Chicago run if you want. It’s fucking freezing over there.”</p>
+<p>“Don’t worry about it.”</p>
+<p>Frank and I fly to Hawaii. I’m thinking about the volcano, wondering if this time it will erupt and engulf me in sediment for archeologists thousands of years from now to dig up, preserved in a look of terror. I take deep breaths and remind myself that this is very unlikely.</p>
+<p>But not totally impossible.</p>
+<p>I’m shaky when I give two teenage girls their sodas as turbulence starts up. Frank requests seatbelts, but my co-attendant Joe says Frank tells him we’re fine to continue in-flight service. “Thank you,” one of the teenage girls says happily, genuinely, as I hand her the can of Sprite. She looks me in the eyes. I smile back and say, “You’re welcome.” I decide I like her.</p>
+<p>This time the hotel we’re staying at is closer to the highway than the water. The downstairs bar and restaurant is largely tiki themed, and every drink is served either out of a pineapple or a coconut. It seems like a waste.</p>
+<p>I’m sipping on a pi&ntilde;a colada when Frank arrives downstairs and sits down next to me. Then I see Joe in the lobby and wave him over.</p>
+<p>“I invited Joe.”</p>
+<p>“Oh,” Frank says, obviously not pleased.</p>
+<p>“Well if you want to be alone then you can take me on a trip where we’re not working.” I lightly punch him on the arm to suggest I’m kidding. Frank sort of shrugs and smiles. Joe sits down with us.</p>
+<p>“You guys check out the pool yet?”</p>
+<p>“I did some laps after the flight,” I say. “It’s pretty big for an airport hotel.”</p>
+<p>Back at JFK, I catch Frank before he heads to the cabs.</p>
+<p>“Mind if we split one?” I ask.</p>
+<p>“I’m not going to Brooklyn,” he says.</p>
+<p>I pause. “Are you mad about the lobby? What I said?”</p>
+<p>“No, I just have to go home.”</p>
+<p>On the curb I realize I need to go home, too.</p>
+<p>At home I’m watching TV I’ve already seen, and something’s making me antsy. Even though I’m tired, sitting here in bed is not satisfying.</p>
+<p>“Byeee!” Oh God.</p>
+<p>“Byeeeee!”</p>
+<p>I turn around to look out the window.</p>
+<p>“BYEEEE!”</p>
+<p>There’s a hole in the window screen next to the boy’s crib now, just above the rail. He waves his hand out the hole. I see him put a foot on top of the rail of the crib. He leans on the screen as he tries to climb over the rail onto the inside ledge. I shoot up out of bed.</p>
+<p>Despite being too big for the crib he still lacks the body strength to crawl over it. His leg falls back onto his bedding, and immediately he tries again.</p>
+<p>I watch him again lift his foot up towards the railing and attempt to climb, glee in his eyes and still shouting, “BYE!” into the abyss between apartment buildings.</p>
+<p>“HEY!” I shout back. “GET OFF OF THERE!”</p>
+<p>His bright eyes snap to me, and he mimics my tone of voice back to me in nonsense speak. “WAH WAH NAH NAH NAH!”</p>
+<p>“You’re going to get hurt!”</p>
+<p>He looks at me and laughs, his hand grabbing at air. I run outside, scrambling through the bric-a-brac between our apartment buildings to look four stories up at the boy.&nbsp;</p>
+<p>“Get. Back. Inside!” I yell. “Helloooo! Your son is trying to jump out the goddamn window!” I scream as loud as I can, but even then I’m not loud enough. I can see his toes peeking out of the hole in the screen as he once again tries to fling himself out of the crib.</p>
+<p>“Get back inside!” I yell.</p>
+<p>“BYEEE!”</p>
+<p>Then an angry voice trumpets from his window. His foot disappears. A woman peeks her head out instead, retreats when she sees me. Her hand slams his window shut. And just like that, the danger is gone.</p>
+<p>Two minutes later I ring the door for the manager’s apartment.</p>
+<p>“Yes?” A crackly voice over the intercom says.</p>
+<p>“I would like to speak with you about one of your tenants.”</p>
+<p>More crackling. Maybe he sighs. But the front door buzzes and I push it open.</p>
+<p>The manager’s door is already propped open. An old man stands there with a newspaper, eyeing me. Music from a radio drifts from his apartment like the smoke of a candle.</p>
+<p>“What is it?” He asks, not impolitely.</p>
+<p>“I live in the building next door. Fourth floor. Three windows down. The tenants in the apartment directly across from mine have a child who wants to climb out of his window.”</p>
+<p>When I say the situation out loud, something clicks. Whatever is wrong with this kid, he’s only doing it because he’s curious about the world. I’m curious about the world too, I remember, like I’m sifting through sand and petrified rocks, and finding the hint of some treasure underneath. That’s really where this all started.</p>
+<p>“Can you at least fix the window for them?” I ask.</p>
+<p>The manager nods and walks up the stairs. “I’ll check on them now,” he says. He seems genuinely alarmed that a kid could be in danger in his building.</p>
+<p>Frank calls me the next morning to say he was sorry he left JFK like that. “You’re sweet,” I tell him. I can hear him panting. He’s probably calling me out in the yard, coming back from a run before stepping into the living room of his four-bedroom house.</p>
+<p>I’m not allowed to go in there, not even my voice. “I’ll let you go,” I say.</p>
+<p>“When we go back to Thailand,” he tells me, “let’s go to the beach.”</p>
+<p>“Sure,” I say. “Maybe the whole crew can go.”</p>
+<p>“They have some pretty nice private beaches,” he says.</p>
+<p>“Could be a nice team retreat.”</p>
+<p>“Yeah, or –” I hear a dog barking. “Harvey, no!” He addresses me again. “I thought a getaway would be romantic. I thought that’s what you wanted.”</p>
+<p>“I like you, Frank,” I tell him, and I realize I’ve never verbalized any sort of positive feeling to him before. “Because I think you’re good. I think you should be good and stay with your wife, and call it quits with me.”</p>
+<p>“You don’t want to see each other anymore?”</p>
+<p>I look out my window to the building next to mine, where the hole in the window is now covered by cardboard. I almost cave and tell him never mind, I’m being stupid, let’s go to the Thai beach. But I want to see how far I can go.</p>
+<p>“No,” I say. “I don’t like being a secret. It feels gross.”</p>
+<p>“You know you’re important to me.”</p>
+<p>“But the thing is, it seems like you want to stay married.”</p>
+<p>There’s silence on the other end.</p>
+<p>“Yes,” he says.</p>
+<p>“Then it’s settled. I’ll see you at JFK.”</p>
+<p>Mr. Byrne is on the Bangkok flight.</p>
+<p>“How’s everything today, Mr. Byrne?” I ask.</p>
+<p>He fidgets with his wedding ring. “Stocks are down, but that’s the game we play. And you, love?”</p>
+<p>He reaches to touch my arm, but I pull away and look him in the eyes. “Is there anything else I can get you?”</p>
+<p>“No, no thank you.” The smile is gone from his face, but he’s nonplussed as he turns back to his Financial Times. There’s probably a younger concierge at his Bangkok hotel.&nbsp;</p>
+<p>We take off, dinosaur bones propelling us into the air. I’m not sure if I’d want my bones to be used to fly an airplane. It would have to be an interesting flight, some transatlantic journey that unites families or lovers, lets someone start a new life and forget their old one. I would be okay with my remaining physical presence on earth being used for that. But by the time my bones are prime for fuel harvesting, we’ll be traveling via air waves or light speed or kelp, or we won’t be traveling at all, everything dust.</p></div>
+
+
+
+
+<hr class="amp-article-hr-block"/>
+
+
+
+
+<div class="amp-article-html-block"><p>Sophie Nau is a writer, baker, and native Angeleno. You can find her most recent project, a series of interviews exploring memory through food, at <a target="_blank" href="http://www.secondsofapples.com/">www.secondsofapples.com</a>.&nbsp;</p></div>
+
+
+      <footer class="amp-article-footer">
+        <p class="amp-article-original-source">
+          Discover more from <a href="http://www.thingscreatedbypeople.com/zine" target="_blank"><em>TCBP</em></a>
+        </p>
+      </footer>
+
+    </article>
+  </div>
+</body>
+</html>

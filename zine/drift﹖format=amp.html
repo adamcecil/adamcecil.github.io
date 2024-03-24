@@ -1,0 +1,345 @@
+<!doctype html>
+<html amp>
+<head>
+  <title>Drift</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+  <link rel="canonical" href="http://www.thingscreatedbypeople.com/zine/drift">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+  <style amp-custom>/* @group type scale */
+
+body {
+  font-size: 1em;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+p, ul, ol, blockquote {
+  margin-top: 1.45em;
+  margin-bottom: 1.45em;
+}
+
+blockquote {
+  font-style: italic;
+  color: #888;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1.414em;
+  border-left: 1px solid #eee;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  color: #111;
+}
+
+h1 {
+  font-size: 2.074em;
+}
+
+h2 {
+  font-size: 1.728em;
+}
+
+h3 {
+  font-size: 1.44em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+blockquote,
+.amp-article-quote-block-source,
+.amp-article-original-source {
+  font-size: 0.833em;
+}
+
+.amp-article-image-caption p,
+.amp-article-video-caption p,
+.amp-article-audio-caption p,
+.amp-article-pubdate,
+.amp-article-author-name {
+  font-size: 0.694em;
+  letter-spacing: 0;
+}
+
+.tiny-font {
+  font-size: 0.579em;
+}
+
+/* @group end */
+
+/* @group general */
+
+body {
+  background: #f2f2f2;
+  font-family: "Avenir Next", Avenir, Roboto, "Segoe WP", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.0125em;
+  line-height: 1.45;
+  color: #666;
+}
+
+.website {
+  width: 100vw;
+  max-width: 768px;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+}
+
+.website-header {
+  background: #111;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2vh 4vw;
+  box-sizing: border-box;
+  max-height: 12vh;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 0.833em;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #f7f7f7;
+}
+
+.site-title a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.amp-view-original {
+  font-size: 0.579em;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: right;
+  white-space: nowrap;
+  color: #666;
+}
+
+.amp-view-original a {
+  color: #666;
+  text-decoration: none;
+}
+
+/* @group end */
+
+/* @group amp article */
+
+.amp-article-content {
+  padding-bottom: 4vh;
+  box-sizing: border-box;
+}
+
+.amp-article-main-image {
+  max-width: 100%;
+}
+
+.amp-article-header {
+  margin-top: 4vh;
+}
+
+.amp-article-header,
+.amp-article-footer,
+.amp-article-html-block,
+.amp-article-markdown-block,
+.amp-article-image-caption,
+.amp-article-video-caption,
+.amp-article-quote-block,
+.amp-article-audio-block,
+.amp-article-embed-block.twitter-tweet {
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.amp-article-title {
+  letter-spacing: -0.0325em;
+}
+
+.amp-article-image-block,
+.amp-article-video-block {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.amp-article-pubdate,
+.amp-article-author-name,
+.amp-article-image-caption,
+.amp-article-video-caption,
+.amp-article-audio-caption,
+.amp-article-quote-block-source {
+  color: #999;
+}
+
+.amp-article-pubdate,
+.amp-article-author-name {
+  display: inline-block;
+  letter-spacing: 0.02em;
+}
+
+.amp-article-pubdate + .amp-article-author-name:before,
+.amp-article-audio-title + .amp-article-audio-author:before {
+  content: ' by ';
+}
+
+.amp-article-audio-title {
+  font-style: italic;
+}
+
+.amp-article-quote-block {
+  margin-top: 1.45em;
+  margin-bottom: 1.45em;
+}
+
+.amp-article-quote-block-text {
+  font-size: 1.2em;
+  font-style: italic;
+  line-height: 1.2;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  border-left-width: 0px;
+}
+
+.amp-article-quote-block-source {
+  margin-top: 0.833em;
+  display: block;
+}
+
+.amp-article-audio-caption p {
+  margin-top: 0.5em;
+  display: block;
+}
+
+amp-img {
+  background-color: #f7f7f7;
+  max-width: 100%;
+}
+
+.amp-article-hr-block {
+  height: 1px;
+  border: none;
+  margin: 2.6em 0;
+  color: #eee;
+  background-color: #eee;
+}
+
+.amp-article-placeholder-block {
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 1.45em;
+  padding: 1.45em;
+  text-align: center;
+}
+
+/* @group end */
+</style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "headline": "Drift",
+      "mainEntityOfPage": "http://www.thingscreatedbypeople.com",
+      
+      "url": "http://www.thingscreatedbypeople.com/zine/drift",
+      "author": {
+        "@type": "Person",
+        "name": "Ben Miller"
+      },
+      "publisher": {
+        "@type": "Organization",
+        
+        "name": "TCBP"
+      },
+      
+      "datePublished": "2015-04-20",
+      "dateModified": "2015-05-09"
+    }
+  </script>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  
+</head>
+<body>
+  <div id="page" class="website">
+
+    <header class="website-header">
+      <h1 class="site-title"><a href="http://www.thingscreatedbypeople.com" target="_blank">TCBP</a></h1>
+      <small class="amp-view-original"><a href="http://www.thingscreatedbypeople.com/zine/drift" target="_blank">View Original</a></small>
+    </header>
+
+    <article id="content" class="amp-article-content">
+      
+
+      <header class="amp-article-header">
+        <h1 class="amp-article-title">Drift</h1>
+        <div class="amp-article-meta">
+          <time class="amp-article-pubdate" datetime="2015-04-20">
+            April 20, 2015
+          </time>
+          <small class="amp-article-author-name">Ben Miller</small>
+        </div>
+      </header>
+
+      
+
+
+
+<div class="amp-article-html-block"><p>Here is how you embalm a body: first, undress it and lay it down. Massage it carefully. The limbs will become stiff soon and you wouldn’t want them to freeze in an awkward position. Close the eyes and glue them shut. If they look sunken, stuff a little cotton behind the eyelids. Close the mouth. Make an incision under the left clavicle and insert two tubes: one to pump the formaldehyde in, one to drain the blood out. Be sure to get both tubes inserted snugly into major arteries. Begin pumping. The process will take several hours. Keep massaging the limbs and torso to make sure the fluid is evenly distributed. When done, be sure to powder the sewn-up incision with makeup so it doesn't show. Dress the body. Some especially leaky bodies require a plastic layer between the skin and the clothes. Cut the clothes up the back, pull them tight across the chest of the corpse. Make the face up. Do something to the hair.</p>
+<p>This, according to late night internet searches I've been making for the past three hours. It might not seem the best thing to be googling late at night, but I couldn't help myself. It’s dark in my room, yellow light from the window casting a dim stripe across my legs. I move a lot when I sleep, tangling the sheets and leaving dark sweat stains. Tonight I woke up dreaming I was at an open-casket funeral; expected, as always, to kneel and pray to the corpse.</p>
+<p>The first corpse I saw was Aunt Mary, a distant relative who lived down the South Shore. The undertaker went overboard with the makeup – blue eye shadow, blush, scarlet lipstick. They tried to do up the viewing room to look like a normal home that just happened to have a coffin in it, but the fabric on all the chairs felt antiseptic and scratchy and the wallpaper had a plastic sheen. You were supposed to ascend this little staircase set up next to the coffin, kneel, and say a prayer to the body. I kept my eyes screwed shut until the last &quot;Amen,&quot; then opened them and looked at the blank face until my mother's touch pulled me away.</p>
+<p>On the way home, some of the family that had driven down together stopped at a fried clam shack off Route 24 in Bridgewater. There were four around the table - my mother, my aunt Ann, our first cousin Ellen, and me. That Loretta Lynn song was playing, &quot;Stand By Your Man.&quot; The place had a TV showing college football, glistening cakes rotated in a glass vitrine. The waitresses wore aprons that cut off above the knees.&nbsp;</p>
+<p>After a beer or two, Ellen took to talking about her upcoming divorce (Boston accent: more divahhz than divorce). She had enormous breasts that heaved as if to emphasize her speech. Her hair; shiny, black, was cut short and hairsprayed into a glossy, motionless trapezoid.</p>
+<p>&quot;He's an asshole,&quot; she said. &quot;I married an asshole.&quot; Her husband Billy (not the father of her children, that was Jim, who'd died of M.S.), had been cheating on her with the receptionist at the flooring company where he installed tile. Ellen's friend Joanne had told her Billy was running around behind her back. &quot;I know where she lives,&quot; Ellen said, &quot;so I got the kids in the car and we went over there to show her the kind of family she's breaking up.&quot;&nbsp;</p>
+<p>My mother and aunt caught each other's eyes across the table. They had gone to college and married men they met there.&nbsp;</p>
+<p>&quot;And we got there,&quot; Ellen said, &quot;And Billy's there! In his clothes, thank god, the fucking rat.&quot;</p>
+<p>&quot;Oh Jesus,&quot; my mother said. She gestured at me.</p>
+<p>&quot;Well, it's an education,&quot; Ellen said. The waitress set three baskets of fried clams down in the middle of the table. &quot;Anyway,&quot; she said, &quot;I couldn't very well stay with the cheating bastard so that's that. Asshole.&quot; She crunched a clam in her mouth, I got a whiff of cooling fry-oil and perfume.</p>
+<p>Ann said, &quot;You did the right thing, babe.&quot; I kept my ears open.</p>
+<p>&quot;Aunt Mary,&quot; Ann went on. &quot;She was a beauty when she was young.&quot;&nbsp;</p>
+<p>&quot;Yeah,&quot; my mother said. &quot;She looked like Sophia Loren or something.&quot;&nbsp;</p>
+<p>&quot;But the mouth she had!&quot; Ellen said, pushing a basket of clams towards me. I ate one. &quot;Only time I ever heard anyone call someone a fried rat's asshole, that's for sure.&quot;&nbsp;</p>
+<p>&quot;But she was a looker,&quot; Ann said.&nbsp;</p>
+<p>&quot;Fat lot of good it did her. Her first husband was a homo, her second husband was in the mob, and her third husband was Jewish.&quot;</p>
+<p>&quot;Ellen,&quot; my mother said, sharply.&nbsp;</p>
+<p>&quot;Didn't say he wasn't good to her ‘til he died, the sweet thing,&quot; Ellen said.&nbsp;</p>
+<p>&quot;The mob?&quot; I asked, perking up.&nbsp;</p>
+<p>&quot;Yeah,&quot; Ellen said. Big guy named Victor. That would have been around '72-'73, right?&quot;&nbsp;</p>
+<p>Ann nodded. &quot;Yeah, must have been. I remember him from when I was about ten.&quot;&nbsp;</p>
+<p>&quot;He set her up in this big house in Jersey with white carpet,&quot; Ellen said. She had diamonds. She showed up to Christmas Eve in a Lincoln.&quot;&nbsp;</p>
+<p>&quot;Didn't it end with him in jail,&quot; my mother asked.&nbsp;</p>
+<p>&quot;Yeah,&quot; Ellen said. &quot;Dad told me they got him for taxes, but I remember someone drunk on Christmas Eve telling me he shot some guy and threw him in the East River. She and I both. Boy, can we pick'em.&quot;&nbsp;<br /><br /><br />Now, I live by the East River, on the Brooklyn waterfront. Late evenings in summer, the park is breezy, the water silver, the sky orange-pink. The river seems to flow in two directions at once – wavelets on the surface skitter north with the wind, underneath, rolling swells swim towards shore. Where the crests meet, they do a kind of two-step. On the bank, boys with bicycles sit smoking, bored dogs sniff at tall grass; in the background, a three-legged water tower hovers menacingly, looking like a monument aliens might have left rusting, waiting for their return. Black fabric billows loosely off half-finished condo towers.</p>
+<p>It was just last night, there, that this latest sleeplessness began. At first, the body just looked like a piece of driftwood or something, a shopping cart, maybe. A fixed-wing plane buzzed overhead, the thing in the water floated closer. I got up, and walked out onto the pier to see what it was.</p>
+<p>The thing coalesced into the shape of a person. &quot;Is that someone swimming? Gross.&quot; I heard some girls say, smoking cigarettes off the pier railing. Then the chilling, terrible limpness of the arms became visible, the head lolling freely with each swell of the river.&nbsp;</p>
+<p>Swollen, distended, blue, the body floated towards me. The man had been muscular, with the body of an athlete, but water had bloated the fingers into fat sausages, pulled the slack skin up off his torso so it twitched nervously with each change in the waves. The distended penis floated on the surface. I heard the girls scream as the body approached the pier feet first, the last thing I saw before it dipped underneath were the eyes – open, green and glassy – and the loose, rotting jaw.&nbsp;<br /><br /><br />When I was a kid, lying in bed and failing to fall asleep, I looked up at the windows that rose up to my left and imagined strange men trying to break in. I'd have already checked the locks. I usually managed to convince myself that the burglars would be stopped, or at least temporarily immobilized, by the window blinds - how, I thought, could they squeeze through the clanking tin slats without being noticed? Surely by the time they snipped away a kidnapper-sized hole I would have time to scream, to run out into the hall and slam the door behind me. Tonight, I lie awake again, thinking of Aunt Mary’s body in her coffin: lips lined, hair fluffed, cheeks stuffed to unnatural plumpness, fists clenched around a cross. I think of my grandmother, who was cremated; her casket rolling along a conveyor belt into the ovens. I think about how bodies are embalmed, the clinical violence of it. There is nothing to do to a corpse. You stuff it full of chemicals, you burn it, you float it in the river. At least the swimmer kept some fish alive, I think, and then I am asleep, at least until the next morning. You take it day by day by day.</p></div>
+
+
+
+
+<hr class="amp-article-hr-block"/>
+
+
+
+
+<div class="amp-article-html-block"><p><span>Ben Miller is a writer and researcher in Crown Heights, Brooklyn with a wide range of interests, from historical research to fiction and criticism to classical music performance. He tweets&nbsp;</span><a href="http://twitter.com/benwritesthings">@benwritesthings</a><span>, learn more at&nbsp;</span><a href="http://benwritesthings.com/">benwritesthings.com</a><span>.</span></p></div>
+
+
+      <footer class="amp-article-footer">
+        <p class="amp-article-original-source">
+          Discover more from <a href="http://www.thingscreatedbypeople.com/zine" target="_blank"><em>TCBP</em></a>
+        </p>
+      </footer>
+
+    </article>
+  </div>
+</body>
+</html>

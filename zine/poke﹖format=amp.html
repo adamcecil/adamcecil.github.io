@@ -1,0 +1,333 @@
+<!doctype html>
+<html amp>
+<head>
+  <title>Poke</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+  <link rel="canonical" href="http://www.thingscreatedbypeople.com/zine/poke">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+  <style amp-custom>/* @group type scale */
+
+body {
+  font-size: 1em;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+p, ul, ol, blockquote {
+  margin-top: 1.45em;
+  margin-bottom: 1.45em;
+}
+
+blockquote {
+  font-style: italic;
+  color: #888;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1.414em;
+  border-left: 1px solid #eee;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  color: #111;
+}
+
+h1 {
+  font-size: 2.074em;
+}
+
+h2 {
+  font-size: 1.728em;
+}
+
+h3 {
+  font-size: 1.44em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+blockquote,
+.amp-article-quote-block-source,
+.amp-article-original-source {
+  font-size: 0.833em;
+}
+
+.amp-article-image-caption p,
+.amp-article-video-caption p,
+.amp-article-audio-caption p,
+.amp-article-pubdate,
+.amp-article-author-name {
+  font-size: 0.694em;
+  letter-spacing: 0;
+}
+
+.tiny-font {
+  font-size: 0.579em;
+}
+
+/* @group end */
+
+/* @group general */
+
+body {
+  background: #f2f2f2;
+  font-family: "Avenir Next", Avenir, Roboto, "Segoe WP", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.0125em;
+  line-height: 1.45;
+  color: #666;
+}
+
+.website {
+  width: 100vw;
+  max-width: 768px;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+}
+
+.website-header {
+  background: #111;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2vh 4vw;
+  box-sizing: border-box;
+  max-height: 12vh;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 0.833em;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #f7f7f7;
+}
+
+.site-title a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.amp-view-original {
+  font-size: 0.579em;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: right;
+  white-space: nowrap;
+  color: #666;
+}
+
+.amp-view-original a {
+  color: #666;
+  text-decoration: none;
+}
+
+/* @group end */
+
+/* @group amp article */
+
+.amp-article-content {
+  padding-bottom: 4vh;
+  box-sizing: border-box;
+}
+
+.amp-article-main-image {
+  max-width: 100%;
+}
+
+.amp-article-header {
+  margin-top: 4vh;
+}
+
+.amp-article-header,
+.amp-article-footer,
+.amp-article-html-block,
+.amp-article-markdown-block,
+.amp-article-image-caption,
+.amp-article-video-caption,
+.amp-article-quote-block,
+.amp-article-audio-block,
+.amp-article-embed-block.twitter-tweet {
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.amp-article-title {
+  letter-spacing: -0.0325em;
+}
+
+.amp-article-image-block,
+.amp-article-video-block {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.amp-article-pubdate,
+.amp-article-author-name,
+.amp-article-image-caption,
+.amp-article-video-caption,
+.amp-article-audio-caption,
+.amp-article-quote-block-source {
+  color: #999;
+}
+
+.amp-article-pubdate,
+.amp-article-author-name {
+  display: inline-block;
+  letter-spacing: 0.02em;
+}
+
+.amp-article-pubdate + .amp-article-author-name:before,
+.amp-article-audio-title + .amp-article-audio-author:before {
+  content: ' by ';
+}
+
+.amp-article-audio-title {
+  font-style: italic;
+}
+
+.amp-article-quote-block {
+  margin-top: 1.45em;
+  margin-bottom: 1.45em;
+}
+
+.amp-article-quote-block-text {
+  font-size: 1.2em;
+  font-style: italic;
+  line-height: 1.2;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  border-left-width: 0px;
+}
+
+.amp-article-quote-block-source {
+  margin-top: 0.833em;
+  display: block;
+}
+
+.amp-article-audio-caption p {
+  margin-top: 0.5em;
+  display: block;
+}
+
+amp-img {
+  background-color: #f7f7f7;
+  max-width: 100%;
+}
+
+.amp-article-hr-block {
+  height: 1px;
+  border: none;
+  margin: 2.6em 0;
+  color: #eee;
+  background-color: #eee;
+}
+
+.amp-article-placeholder-block {
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 1.45em;
+  padding: 1.45em;
+  text-align: center;
+}
+
+/* @group end */
+</style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "headline": "Poke",
+      "mainEntityOfPage": "http://www.thingscreatedbypeople.com",
+      
+      "url": "http://www.thingscreatedbypeople.com/zine/poke",
+      "author": {
+        "@type": "Person",
+        "name": "Adam Cecil"
+      },
+      "publisher": {
+        "@type": "Organization",
+        
+        "name": "TCBP"
+      },
+      
+      "datePublished": "2015-02-22",
+      "dateModified": "2015-05-10"
+    }
+  </script>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  
+</head>
+<body>
+  <div id="page" class="website">
+
+    <header class="website-header">
+      <h1 class="site-title"><a href="http://www.thingscreatedbypeople.com" target="_blank">TCBP</a></h1>
+      <small class="amp-view-original"><a href="http://www.thingscreatedbypeople.com/zine/poke" target="_blank">View Original</a></small>
+    </header>
+
+    <article id="content" class="amp-article-content">
+      
+
+      <header class="amp-article-header">
+        <h1 class="amp-article-title">Poke</h1>
+        <div class="amp-article-meta">
+          <time class="amp-article-pubdate" datetime="2015-02-22">
+            February 22, 2015
+          </time>
+          <small class="amp-article-author-name">Adam Cecil</small>
+        </div>
+      </header>
+
+      
+
+
+
+<div class="amp-article-html-block"><p>Taylor died. I don't know how, or when, exactly. But he is, in fact, dead, and never coming back. I know this because I saw it on Facebook.&nbsp;</p>
+<p>We called him &quot;Black Taylor.&quot; It was the kind of joke that faux-liberal white teenagers raised in rural Vermont would find funny. Black Taylor wasn't black, but he wore a lot of white t-shirts and loose jeans and loved rap music. He was an amateur rapper himself.&nbsp;</p>
+<p>He became fast friends with one of the RAs, which is what the Governor’s Institute of Vermont called their camp counselors. I don’t remember the RA’s name, but he also loved rap music. One day the RAs were allowed to teach their own class, and this guy taught a class on the history of hip-hop. He was also a semi-pro birdwatcher.</p>
+<p>It was 2007. Facebook wasn’t really a thing. I only got one because my friend Bailey had one, but all of my friends were still on MySpace. The people I met at the Governor’s Institute were a little older than me - thinking about college, about SAT scores, about sex. I thought about those things, too. The difference was that those things were actually happening to these people.&nbsp;</p>
+<p>They all used Facebook. When they weren’t off in the woods making out, they would spend their free time huddled around the few internet-connected computers in the student center. They wanted to know what their friends at home were doing. They felt removed. I felt removed, too, but from the people in front of me, as I stood on the edge of groups and watched them talk and laugh like they had been friends for years when in fact they’d only met days ago. I laughed when they laughed, pretending to feel included.</p>
+<p>There was a White Taylor. White Taylor was white, blonde, very skinny with bulging eyes. The popular joke was that he was a crack addict. White Taylor wasn’t White Taylor just because we needed some to complete the nickname yin-yang. White Taylor came from a rich family. White Taylor was going to Bates. White Taylor wore polos.</p>
+<p>This was the Governor’s Institute of Vermont on Current Issues and Youth Activism, where we knew enough about racial inequality to make the joke, but never had to confront the realities of it outside of our bubble of white privilege. We were literally up on a hill, at the School of International Training, looking over Brattleboro, Vermont, the city that proclaimed that it would arrest George W. Bush and Dick Cheney for war crimes if they ever stepped foot in city limits. We were morally and intellectually superior. It was implied and we believed it.</p>
+<p>I walked in on Black Taylor taking a shit. The dorms we were staying in had communal bathrooms. I pressed open the door to a stall and there he was: backwards baseball cap on his head, loose jeans bundled at his ankles, and his eyes staring at me from his throne up on the hill.</p>
+<p>I apologized and backed away into my own stall, right next to his. He laughed. We made awkward small talk. I was done before him, washed my hands, and left. It was the only private interaction we had together, the only time he had really acknowledged my existence in any significant way.&nbsp;</p>
+<p>And then Taylor died.</p>
+<p>Not right away, but eventually, the same way all of us will. I found this out a few years later, on Facebook, when one of our mutual friends from the Governor’s Institute left a message on his wall. Miss you. Can’t believe you’re gone. Taken before your time. His wall was full of messages like these; some just short sentences and others long essays on their friendship. All addressed to someone who would never read them.</p>
+<p>And now they're gone. His Facebook was deleted at some point by a friend or family member.&nbsp;</p>
+<p>At the end of the Governor's Institute, there was a bonfire. A girl with a guitar sang Green Day's &quot;Good Riddance (Time of Your Life).&quot; Someone played along on a fiddle. It was a tired song then, but the circle of teenagers around the fire, me included, sang under their breaths. It was an amazing experience, we told each other. We would never forget it. We'd stay in touch. Facebook me!</p>
+<p>I only found a few pictures from that camp on Facebook. One had Black Taylor standing right in the middle of a big group, me included. He was standing with his chin in his hands, looking up towards the sun.</p>
+<p>He used to be tagged in the picture, but he's not anymore.</p></div>
+
+
+
+
+<hr class="amp-article-hr-block"/>
+
+
+
+
+<div class="amp-article-html-block"><p><span>Adam Cecil is a writer living in Brooklyn. He is the managing editor of this zine. You can find more work at his&nbsp;</span><a href="http://yourfavoritexanga.com/">website</a><span>.</span></p></div>
+
+
+      <footer class="amp-article-footer">
+        <p class="amp-article-original-source">
+          Discover more from <a href="http://www.thingscreatedbypeople.com/zine" target="_blank"><em>TCBP</em></a>
+        </p>
+      </footer>
+
+    </article>
+  </div>
+</body>
+</html>

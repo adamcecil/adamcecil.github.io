@@ -1,0 +1,668 @@
+<!doctype html>
+<html amp>
+<head>
+  <title>New York on a Canvas: Art by David Bransfield</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+  <link rel="canonical" href="http://www.thingscreatedbypeople.com/zine/david-bransfield-new-york-drawings">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+  <style amp-custom>/* @group type scale */
+
+body {
+  font-size: 1em;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+p, ul, ol, blockquote {
+  margin-top: 1.45em;
+  margin-bottom: 1.45em;
+}
+
+blockquote {
+  font-style: italic;
+  color: #888;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1.414em;
+  border-left: 1px solid #eee;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  color: #111;
+}
+
+h1 {
+  font-size: 2.074em;
+}
+
+h2 {
+  font-size: 1.728em;
+}
+
+h3 {
+  font-size: 1.44em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+blockquote,
+.amp-article-quote-block-source,
+.amp-article-original-source {
+  font-size: 0.833em;
+}
+
+.amp-article-image-caption p,
+.amp-article-video-caption p,
+.amp-article-audio-caption p,
+.amp-article-pubdate,
+.amp-article-author-name {
+  font-size: 0.694em;
+  letter-spacing: 0;
+}
+
+.tiny-font {
+  font-size: 0.579em;
+}
+
+/* @group end */
+
+/* @group general */
+
+body {
+  background: #f2f2f2;
+  font-family: "Avenir Next", Avenir, Roboto, "Segoe WP", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.0125em;
+  line-height: 1.45;
+  color: #666;
+}
+
+.website {
+  width: 100vw;
+  max-width: 768px;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+}
+
+.website-header {
+  background: #111;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2vh 4vw;
+  box-sizing: border-box;
+  max-height: 12vh;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 0.833em;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #f7f7f7;
+}
+
+.site-title a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.amp-view-original {
+  font-size: 0.579em;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: right;
+  white-space: nowrap;
+  color: #666;
+}
+
+.amp-view-original a {
+  color: #666;
+  text-decoration: none;
+}
+
+/* @group end */
+
+/* @group amp article */
+
+.amp-article-content {
+  padding-bottom: 4vh;
+  box-sizing: border-box;
+}
+
+.amp-article-main-image {
+  max-width: 100%;
+}
+
+.amp-article-header {
+  margin-top: 4vh;
+}
+
+.amp-article-header,
+.amp-article-footer,
+.amp-article-html-block,
+.amp-article-markdown-block,
+.amp-article-image-caption,
+.amp-article-video-caption,
+.amp-article-quote-block,
+.amp-article-audio-block,
+.amp-article-embed-block.twitter-tweet {
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.amp-article-title {
+  letter-spacing: -0.0325em;
+}
+
+.amp-article-image-block,
+.amp-article-video-block {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.amp-article-pubdate,
+.amp-article-author-name,
+.amp-article-image-caption,
+.amp-article-video-caption,
+.amp-article-audio-caption,
+.amp-article-quote-block-source {
+  color: #999;
+}
+
+.amp-article-pubdate,
+.amp-article-author-name {
+  display: inline-block;
+  letter-spacing: 0.02em;
+}
+
+.amp-article-pubdate + .amp-article-author-name:before,
+.amp-article-audio-title + .amp-article-audio-author:before {
+  content: ' by ';
+}
+
+.amp-article-audio-title {
+  font-style: italic;
+}
+
+.amp-article-quote-block {
+  margin-top: 1.45em;
+  margin-bottom: 1.45em;
+}
+
+.amp-article-quote-block-text {
+  font-size: 1.2em;
+  font-style: italic;
+  line-height: 1.2;
+  color: #111;
+  margin: 0;
+  padding: 0;
+  border-left-width: 0px;
+}
+
+.amp-article-quote-block-source {
+  margin-top: 0.833em;
+  display: block;
+}
+
+.amp-article-audio-caption p {
+  margin-top: 0.5em;
+  display: block;
+}
+
+amp-img {
+  background-color: #f7f7f7;
+  max-width: 100%;
+}
+
+.amp-article-hr-block {
+  height: 1px;
+  border: none;
+  margin: 2.6em 0;
+  color: #eee;
+  background-color: #eee;
+}
+
+.amp-article-placeholder-block {
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 1.45em;
+  padding: 1.45em;
+  text-align: center;
+}
+
+/* @group end */
+</style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "headline": "New York on a Canvas: Art by David Bransfield",
+      "mainEntityOfPage": "http://www.thingscreatedbypeople.com",
+      
+      "url": "http://www.thingscreatedbypeople.com/zine/david-bransfield-new-york-drawings",
+      "author": {
+        "@type": "Person",
+        "name": "Natalia Lehaf"
+      },
+      "publisher": {
+        "@type": "Organization",
+        
+        "name": "TCBP"
+      },
+      
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449932700-T2XC75SLLON6TNAEGIY8/db.jpg?format=750w",
+        "width": 804,
+        "height": 536
+      },
+      
+      "datePublished": "2016-10-30",
+      "dateModified": "2016-10-30"
+    }
+  </script>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+</head>
+<body>
+  <div id="page" class="website">
+
+    <header class="website-header">
+      <h1 class="site-title"><a href="http://www.thingscreatedbypeople.com" target="_blank">TCBP</a></h1>
+      <small class="amp-view-original"><a href="http://www.thingscreatedbypeople.com/zine/david-bransfield-new-york-drawings" target="_blank">View Original</a></small>
+    </header>
+
+    <article id="content" class="amp-article-content">
+      
+        <amp-img
+          class="amp-article-main-image"
+          layout="responsive"
+          width="804"
+          height="536"
+          src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449932700-T2XC75SLLON6TNAEGIY8/db.jpg?format=500w"
+          srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449932700-T2XC75SLLON6TNAEGIY8/db.jpg?format=2500w 2500w,
+          https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449932700-T2XC75SLLON6TNAEGIY8/db.jpg?format=1500w 1500w,
+          https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449932700-T2XC75SLLON6TNAEGIY8/db.jpg?format=1000w 1000w,
+          https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449932700-T2XC75SLLON6TNAEGIY8/db.jpg?format=750w 750w,
+          https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449932700-T2XC75SLLON6TNAEGIY8/db.jpg?format=500w 500w,
+          https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449932700-T2XC75SLLON6TNAEGIY8/db.jpg?format=300w 300w,
+          https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449932700-T2XC75SLLON6TNAEGIY8/db.jpg?format=100w 100w"
+          sizes="100vw">
+        </amp-img>
+      
+
+      <header class="amp-article-header">
+        <h1 class="amp-article-title">New York on a Canvas: Art by David Bransfield</h1>
+        <div class="amp-article-meta">
+          <time class="amp-article-pubdate" datetime="2016-10-30">
+            October 30, 2016
+          </time>
+          <small class="amp-article-author-name">Natalia Lehaf</small>
+        </div>
+      </header>
+
+      
+
+
+
+<div class="amp-article-html-block"><p>New York City is not a place. It’s an experience. The buildings are high, apartments small, and streets overpopulated – but it never feels claustrophobic. Artists have tried to replicate its paradoxical beauty for as long as both the city and art have existed. And although the New York experience can’t be framed, artist David Bransfield has managed to bring his experiences of New York to life.</p>
+<p><em>This interview has been edited and condensed.</em></p>
+<p><strong>Natalia Lehaf:</strong> How do you describe yourself as an artist?</p>
+<p><strong>David Bransfield: </strong>This is a totalizing question that is never easy for an artist to answer, especially because at this point in time I seem to be interested in many contrasting ideas and mediums. Overall, I would say that the common thread of my interests is the experiences and memories involved in the creation and immersion of a space. My previous work has spanned from ideas about geometry to urban landscapes to extremely conceptual depictions of surreal spaces, and I think that all of these ideas have a very specific relationship to the individual viewer.</p></div>
+
+
+
+
+<amp-carousel class="amp-article-carousel"
+  layout="fixed-height"
+  width="auto"
+  height="150">
+  
+    <amp-img width="226"
+      height="150"
+      src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449197324-ZAE677BCN4FHWBAT5QZV/image-asset.octet-stream?format=500w"
+      srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449197324-ZAE677BCN4FHWBAT5QZV/image-asset.octet-stream?format=2500w 2500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449197324-ZAE677BCN4FHWBAT5QZV/image-asset.octet-stream?format=1500w 1500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449197324-ZAE677BCN4FHWBAT5QZV/image-asset.octet-stream?format=1000w 1000w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449197324-ZAE677BCN4FHWBAT5QZV/image-asset.octet-stream?format=750w 750w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449197324-ZAE677BCN4FHWBAT5QZV/image-asset.octet-stream?format=500w 500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449197324-ZAE677BCN4FHWBAT5QZV/image-asset.octet-stream?format=300w 300w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449197324-ZAE677BCN4FHWBAT5QZV/image-asset.octet-stream?format=100w 100w">
+    </amp-img>
+  
+    <amp-img width="196"
+      height="150"
+      src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449233931-WGFK1VTQERATR1PWZ9OV/image-asset.octet-stream?format=500w"
+      srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449233931-WGFK1VTQERATR1PWZ9OV/image-asset.octet-stream?format=2500w 2500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449233931-WGFK1VTQERATR1PWZ9OV/image-asset.octet-stream?format=1500w 1500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449233931-WGFK1VTQERATR1PWZ9OV/image-asset.octet-stream?format=1000w 1000w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449233931-WGFK1VTQERATR1PWZ9OV/image-asset.octet-stream?format=750w 750w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449233931-WGFK1VTQERATR1PWZ9OV/image-asset.octet-stream?format=500w 500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449233931-WGFK1VTQERATR1PWZ9OV/image-asset.octet-stream?format=300w 300w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449233931-WGFK1VTQERATR1PWZ9OV/image-asset.octet-stream?format=100w 100w">
+    </amp-img>
+  
+    <amp-img width="186"
+      height="150"
+      src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449245067-7WBB28X5TD3X3GKABG94/image-asset.octet-stream?format=500w"
+      srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449245067-7WBB28X5TD3X3GKABG94/image-asset.octet-stream?format=2500w 2500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449245067-7WBB28X5TD3X3GKABG94/image-asset.octet-stream?format=1500w 1500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449245067-7WBB28X5TD3X3GKABG94/image-asset.octet-stream?format=1000w 1000w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449245067-7WBB28X5TD3X3GKABG94/image-asset.octet-stream?format=750w 750w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449245067-7WBB28X5TD3X3GKABG94/image-asset.octet-stream?format=500w 500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449245067-7WBB28X5TD3X3GKABG94/image-asset.octet-stream?format=300w 300w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449245067-7WBB28X5TD3X3GKABG94/image-asset.octet-stream?format=100w 100w">
+    </amp-img>
+  
+    <amp-img width="204"
+      height="150"
+      src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449256202-HD45KTOLQIOEE55IHB5I/image-asset.octet-stream?format=500w"
+      srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449256202-HD45KTOLQIOEE55IHB5I/image-asset.octet-stream?format=2500w 2500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449256202-HD45KTOLQIOEE55IHB5I/image-asset.octet-stream?format=1500w 1500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449256202-HD45KTOLQIOEE55IHB5I/image-asset.octet-stream?format=1000w 1000w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449256202-HD45KTOLQIOEE55IHB5I/image-asset.octet-stream?format=750w 750w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449256202-HD45KTOLQIOEE55IHB5I/image-asset.octet-stream?format=500w 500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449256202-HD45KTOLQIOEE55IHB5I/image-asset.octet-stream?format=300w 300w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449256202-HD45KTOLQIOEE55IHB5I/image-asset.octet-stream?format=100w 100w">
+    </amp-img>
+  
+    <amp-img width="200"
+      height="150"
+      src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449617999-SLR3TDLBTWM58V3B5XM5/image-asset.octet-stream?format=500w"
+      srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449617999-SLR3TDLBTWM58V3B5XM5/image-asset.octet-stream?format=2500w 2500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449617999-SLR3TDLBTWM58V3B5XM5/image-asset.octet-stream?format=1500w 1500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449617999-SLR3TDLBTWM58V3B5XM5/image-asset.octet-stream?format=1000w 1000w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449617999-SLR3TDLBTWM58V3B5XM5/image-asset.octet-stream?format=750w 750w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449617999-SLR3TDLBTWM58V3B5XM5/image-asset.octet-stream?format=500w 500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449617999-SLR3TDLBTWM58V3B5XM5/image-asset.octet-stream?format=300w 300w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449617999-SLR3TDLBTWM58V3B5XM5/image-asset.octet-stream?format=100w 100w">
+    </amp-img>
+  
+</amp-carousel>
+
+
+
+
+<div class="amp-article-html-block"><p><strong>NL: </strong>What’s your background in art, both academically and personally?</p>
+<p><strong>DB: </strong>I have always been extremely curious as to how things are made, both from an artistic and architectural standpoint. My interests in both art and architecture turned into a career choice around 9th grade. I began attending an after-school art program on Long Island called the Huntington School of Fine Arts, where for the first time I was trained in the classical mediums of drawing, painting, and sculpting. I spent a couple years there and grew exponentially as an artist, and then from there I attended NYU as a double major in Studio Art and Urban Design &amp; Architectural Studies.</p></div>
+
+
+
+
+<amp-carousel class="amp-article-carousel"
+  layout="fixed-height"
+  width="auto"
+  height="150">
+  
+    <amp-img width="212"
+      height="150"
+      src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449290437-K646IXIPNFXFSODIJZ8B/image-asset.octet-stream?format=500w"
+      srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449290437-K646IXIPNFXFSODIJZ8B/image-asset.octet-stream?format=2500w 2500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449290437-K646IXIPNFXFSODIJZ8B/image-asset.octet-stream?format=1500w 1500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449290437-K646IXIPNFXFSODIJZ8B/image-asset.octet-stream?format=1000w 1000w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449290437-K646IXIPNFXFSODIJZ8B/image-asset.octet-stream?format=750w 750w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449290437-K646IXIPNFXFSODIJZ8B/image-asset.octet-stream?format=500w 500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449290437-K646IXIPNFXFSODIJZ8B/image-asset.octet-stream?format=300w 300w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449290437-K646IXIPNFXFSODIJZ8B/image-asset.octet-stream?format=100w 100w">
+    </amp-img>
+  
+    <amp-img width="215"
+      height="150"
+      src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449301263-UGYZNRFRXAZRM3P39AXK/image-asset.octet-stream?format=500w"
+      srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449301263-UGYZNRFRXAZRM3P39AXK/image-asset.octet-stream?format=2500w 2500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449301263-UGYZNRFRXAZRM3P39AXK/image-asset.octet-stream?format=1500w 1500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449301263-UGYZNRFRXAZRM3P39AXK/image-asset.octet-stream?format=1000w 1000w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449301263-UGYZNRFRXAZRM3P39AXK/image-asset.octet-stream?format=750w 750w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449301263-UGYZNRFRXAZRM3P39AXK/image-asset.octet-stream?format=500w 500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449301263-UGYZNRFRXAZRM3P39AXK/image-asset.octet-stream?format=300w 300w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449301263-UGYZNRFRXAZRM3P39AXK/image-asset.octet-stream?format=100w 100w">
+    </amp-img>
+  
+</amp-carousel>
+
+
+
+
+<div class="amp-article-html-block"><p><strong>NL: </strong>Your sketches and paintings of New York City are very lifelike and precise. What is your relationship with the city?</p>
+<p><strong>DB:</strong> I grew up on the Queens/Long Island border only 20 minutes from Manhattan, so New York is my home. New York has always had an intense influence on how I think about art and architecture. Coming from such a rich and diverse place, I have always been interested in the makeup of communities as an insular composition of like-minded people, especially in New York where there are still many ethnic and religious-based communities. What interests me is how each of these communities come together to form a larger area that many people consider the “melting pot” that is NYC, yet there is still a definite division between neighborhoods, each with their own character and influence on each other. It is the dissection of “micro” versus “macro” in terms of the individual and the community that I have been trying to dissect in my more recent work. I am also extremely interested in this in terms of architecture and urban planning as well.</p></div>
+
+
+
+
+<amp-carousel class="amp-article-carousel"
+  layout="fixed-height"
+  width="auto"
+  height="150">
+  
+    <amp-img width="193"
+      height="150"
+      src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449451107-J5FEFEZGLKC3TJX64Y1G/image-asset.octet-stream?format=500w"
+      srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449451107-J5FEFEZGLKC3TJX64Y1G/image-asset.octet-stream?format=2500w 2500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449451107-J5FEFEZGLKC3TJX64Y1G/image-asset.octet-stream?format=1500w 1500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449451107-J5FEFEZGLKC3TJX64Y1G/image-asset.octet-stream?format=1000w 1000w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449451107-J5FEFEZGLKC3TJX64Y1G/image-asset.octet-stream?format=750w 750w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449451107-J5FEFEZGLKC3TJX64Y1G/image-asset.octet-stream?format=500w 500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449451107-J5FEFEZGLKC3TJX64Y1G/image-asset.octet-stream?format=300w 300w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449451107-J5FEFEZGLKC3TJX64Y1G/image-asset.octet-stream?format=100w 100w">
+    </amp-img>
+  
+    <amp-img width="204"
+      height="150"
+      src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449489156-Y8V5ZG2YZVYLGEZH73A1/image-asset.octet-stream?format=500w"
+      srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449489156-Y8V5ZG2YZVYLGEZH73A1/image-asset.octet-stream?format=2500w 2500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449489156-Y8V5ZG2YZVYLGEZH73A1/image-asset.octet-stream?format=1500w 1500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449489156-Y8V5ZG2YZVYLGEZH73A1/image-asset.octet-stream?format=1000w 1000w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449489156-Y8V5ZG2YZVYLGEZH73A1/image-asset.octet-stream?format=750w 750w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449489156-Y8V5ZG2YZVYLGEZH73A1/image-asset.octet-stream?format=500w 500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449489156-Y8V5ZG2YZVYLGEZH73A1/image-asset.octet-stream?format=300w 300w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449489156-Y8V5ZG2YZVYLGEZH73A1/image-asset.octet-stream?format=100w 100w">
+    </amp-img>
+  
+    <amp-img width="221"
+      height="150"
+      src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449392293-DX3Q2SK71IRNNBQCCQV7/image-asset.octet-stream?format=500w"
+      srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449392293-DX3Q2SK71IRNNBQCCQV7/image-asset.octet-stream?format=2500w 2500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449392293-DX3Q2SK71IRNNBQCCQV7/image-asset.octet-stream?format=1500w 1500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449392293-DX3Q2SK71IRNNBQCCQV7/image-asset.octet-stream?format=1000w 1000w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449392293-DX3Q2SK71IRNNBQCCQV7/image-asset.octet-stream?format=750w 750w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449392293-DX3Q2SK71IRNNBQCCQV7/image-asset.octet-stream?format=500w 500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449392293-DX3Q2SK71IRNNBQCCQV7/image-asset.octet-stream?format=300w 300w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449392293-DX3Q2SK71IRNNBQCCQV7/image-asset.octet-stream?format=100w 100w">
+    </amp-img>
+  
+    <amp-img width="206"
+      height="150"
+      src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449371693-5AZO0TKU0Q1IC0KILY3Y/image-asset.octet-stream?format=500w"
+      srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449371693-5AZO0TKU0Q1IC0KILY3Y/image-asset.octet-stream?format=2500w 2500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449371693-5AZO0TKU0Q1IC0KILY3Y/image-asset.octet-stream?format=1500w 1500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449371693-5AZO0TKU0Q1IC0KILY3Y/image-asset.octet-stream?format=1000w 1000w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449371693-5AZO0TKU0Q1IC0KILY3Y/image-asset.octet-stream?format=750w 750w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449371693-5AZO0TKU0Q1IC0KILY3Y/image-asset.octet-stream?format=500w 500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449371693-5AZO0TKU0Q1IC0KILY3Y/image-asset.octet-stream?format=300w 300w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449371693-5AZO0TKU0Q1IC0KILY3Y/image-asset.octet-stream?format=100w 100w">
+    </amp-img>
+  
+    <amp-img width="244"
+      height="150"
+      src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449500915-PHALQK22Y2Y9GQILS0RV/image-asset.octet-stream?format=500w"
+      srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449500915-PHALQK22Y2Y9GQILS0RV/image-asset.octet-stream?format=2500w 2500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449500915-PHALQK22Y2Y9GQILS0RV/image-asset.octet-stream?format=1500w 1500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449500915-PHALQK22Y2Y9GQILS0RV/image-asset.octet-stream?format=1000w 1000w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449500915-PHALQK22Y2Y9GQILS0RV/image-asset.octet-stream?format=750w 750w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449500915-PHALQK22Y2Y9GQILS0RV/image-asset.octet-stream?format=500w 500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449500915-PHALQK22Y2Y9GQILS0RV/image-asset.octet-stream?format=300w 300w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449500915-PHALQK22Y2Y9GQILS0RV/image-asset.octet-stream?format=100w 100w">
+    </amp-img>
+  
+</amp-carousel>
+
+
+
+
+<div class="amp-article-html-block"><p><strong>NL:</strong> What’s your process like?</p>
+<p><strong>DB: </strong>I’ll talk about the process for my most recent series of paintings, which were 6 to 10-foot urban landscape oil paintings. I began by assigning myself a large urban area to explore, which in this case was Chinatown. Then I wander. I find that wandering instead of trying to seek specific spaces can sometimes be more rewarding. If you have too specific of a goal, you will lose all sense of exploration in an attempt to find this goal and you may miss many unexpected opportunities. I had a set of guidelines to follow (finding spaces with rich color palettes, graffiti, and interesting people) but I let myself explore within these guidelines. For my first several wanderings I simply walk around and document spaces. I then go through my photographs and choose spaces which I believe have the most rewarding compositions and environments, and revisit these sites several more times for extended periods to capture a specific scene I wish to convey in my painting. After I decide on a composition which I believe makes for the best painting (this could be a single photograph or an agglomeration of several), I then make a series of sketches to resolve any compositional issues. This entire process generally lasts about 2 to 3 weeks before I begin the actual painting. The paintings themselves usually take about the same amount of time, and I try to stick with just one to two paintings at a time so I can focus on them without too many other distractions. I find that, personally, if I do not complete a piece within a reasonable amount of time or if I stop and revisit the piece later then it often turns out fragmented. Other than that, I do not focus too much on setting rules for myself while painting. I often find that the painting itself will dictate the rules of its creation, and I do not set these rules until I have already started painting. Stylistic rules will sort themselves out as the piece is being created. In terms of completion, I never feel like my paintings are truly finished. It is really just a matter of reaching a point where I am comfortable stopping, which I know is coming when I begin to get sick of the painting!</p></div>
+
+
+
+
+<amp-carousel class="amp-article-carousel"
+  layout="fixed-height"
+  width="auto"
+  height="150">
+  
+    <amp-img width="194"
+      height="150"
+      src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077595-M1LTSR3L3JSFC52QWMA5/image-asset.octet-stream?format=500w"
+      srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077595-M1LTSR3L3JSFC52QWMA5/image-asset.octet-stream?format=2500w 2500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077595-M1LTSR3L3JSFC52QWMA5/image-asset.octet-stream?format=1500w 1500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077595-M1LTSR3L3JSFC52QWMA5/image-asset.octet-stream?format=1000w 1000w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077595-M1LTSR3L3JSFC52QWMA5/image-asset.octet-stream?format=750w 750w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077595-M1LTSR3L3JSFC52QWMA5/image-asset.octet-stream?format=500w 500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077595-M1LTSR3L3JSFC52QWMA5/image-asset.octet-stream?format=300w 300w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077595-M1LTSR3L3JSFC52QWMA5/image-asset.octet-stream?format=100w 100w">
+    </amp-img>
+  
+    <amp-img width="224"
+      height="150"
+      src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077056-D39R0OBVCXZ6MY5IGBCZ/image-asset.octet-stream?format=500w"
+      srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077056-D39R0OBVCXZ6MY5IGBCZ/image-asset.octet-stream?format=2500w 2500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077056-D39R0OBVCXZ6MY5IGBCZ/image-asset.octet-stream?format=1500w 1500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077056-D39R0OBVCXZ6MY5IGBCZ/image-asset.octet-stream?format=1000w 1000w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077056-D39R0OBVCXZ6MY5IGBCZ/image-asset.octet-stream?format=750w 750w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077056-D39R0OBVCXZ6MY5IGBCZ/image-asset.octet-stream?format=500w 500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077056-D39R0OBVCXZ6MY5IGBCZ/image-asset.octet-stream?format=300w 300w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077056-D39R0OBVCXZ6MY5IGBCZ/image-asset.octet-stream?format=100w 100w">
+    </amp-img>
+  
+    <amp-img width="224"
+      height="150"
+      src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077700-2XGQU7PXC34VIHZPYA3G/image-asset.octet-stream?format=500w"
+      srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077700-2XGQU7PXC34VIHZPYA3G/image-asset.octet-stream?format=2500w 2500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077700-2XGQU7PXC34VIHZPYA3G/image-asset.octet-stream?format=1500w 1500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077700-2XGQU7PXC34VIHZPYA3G/image-asset.octet-stream?format=1000w 1000w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077700-2XGQU7PXC34VIHZPYA3G/image-asset.octet-stream?format=750w 750w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077700-2XGQU7PXC34VIHZPYA3G/image-asset.octet-stream?format=500w 500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077700-2XGQU7PXC34VIHZPYA3G/image-asset.octet-stream?format=300w 300w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449077700-2XGQU7PXC34VIHZPYA3G/image-asset.octet-stream?format=100w 100w">
+    </amp-img>
+  
+    <amp-img width="224"
+      height="150"
+      src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078587-N0GC7W2ONZBO9GTXSXDQ/image-asset.octet-stream?format=500w"
+      srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078587-N0GC7W2ONZBO9GTXSXDQ/image-asset.octet-stream?format=2500w 2500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078587-N0GC7W2ONZBO9GTXSXDQ/image-asset.octet-stream?format=1500w 1500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078587-N0GC7W2ONZBO9GTXSXDQ/image-asset.octet-stream?format=1000w 1000w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078587-N0GC7W2ONZBO9GTXSXDQ/image-asset.octet-stream?format=750w 750w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078587-N0GC7W2ONZBO9GTXSXDQ/image-asset.octet-stream?format=500w 500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078587-N0GC7W2ONZBO9GTXSXDQ/image-asset.octet-stream?format=300w 300w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078587-N0GC7W2ONZBO9GTXSXDQ/image-asset.octet-stream?format=100w 100w">
+    </amp-img>
+  
+    <amp-img width="118"
+      height="150"
+      src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078104-QCIU6U1F7N1WQ2XH2V27/image-asset.octet-stream?format=500w"
+      srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078104-QCIU6U1F7N1WQ2XH2V27/image-asset.octet-stream?format=2500w 2500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078104-QCIU6U1F7N1WQ2XH2V27/image-asset.octet-stream?format=1500w 1500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078104-QCIU6U1F7N1WQ2XH2V27/image-asset.octet-stream?format=1000w 1000w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078104-QCIU6U1F7N1WQ2XH2V27/image-asset.octet-stream?format=750w 750w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078104-QCIU6U1F7N1WQ2XH2V27/image-asset.octet-stream?format=500w 500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078104-QCIU6U1F7N1WQ2XH2V27/image-asset.octet-stream?format=300w 300w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078104-QCIU6U1F7N1WQ2XH2V27/image-asset.octet-stream?format=100w 100w">
+    </amp-img>
+  
+    <amp-img width="157"
+      height="150"
+      src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078811-Z706D7848DAZTKW1D0QR/image-asset.octet-stream?format=500w"
+      srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078811-Z706D7848DAZTKW1D0QR/image-asset.octet-stream?format=2500w 2500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078811-Z706D7848DAZTKW1D0QR/image-asset.octet-stream?format=1500w 1500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078811-Z706D7848DAZTKW1D0QR/image-asset.octet-stream?format=1000w 1000w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078811-Z706D7848DAZTKW1D0QR/image-asset.octet-stream?format=750w 750w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078811-Z706D7848DAZTKW1D0QR/image-asset.octet-stream?format=500w 500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078811-Z706D7848DAZTKW1D0QR/image-asset.octet-stream?format=300w 300w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449078811-Z706D7848DAZTKW1D0QR/image-asset.octet-stream?format=100w 100w">
+    </amp-img>
+  
+    <amp-img width="224"
+      height="150"
+      src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449079232-JA12130ZV4S2D3X9YLT3/image-asset.octet-stream?format=500w"
+      srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449079232-JA12130ZV4S2D3X9YLT3/image-asset.octet-stream?format=2500w 2500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449079232-JA12130ZV4S2D3X9YLT3/image-asset.octet-stream?format=1500w 1500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449079232-JA12130ZV4S2D3X9YLT3/image-asset.octet-stream?format=1000w 1000w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449079232-JA12130ZV4S2D3X9YLT3/image-asset.octet-stream?format=750w 750w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449079232-JA12130ZV4S2D3X9YLT3/image-asset.octet-stream?format=500w 500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449079232-JA12130ZV4S2D3X9YLT3/image-asset.octet-stream?format=300w 300w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449079232-JA12130ZV4S2D3X9YLT3/image-asset.octet-stream?format=100w 100w">
+    </amp-img>
+  
+    <amp-img width="185"
+      height="150"
+      src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449079438-CYRO9WV5NMW90NJ4I6JE/image-asset.octet-stream?format=500w"
+      srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449079438-CYRO9WV5NMW90NJ4I6JE/image-asset.octet-stream?format=2500w 2500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449079438-CYRO9WV5NMW90NJ4I6JE/image-asset.octet-stream?format=1500w 1500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449079438-CYRO9WV5NMW90NJ4I6JE/image-asset.octet-stream?format=1000w 1000w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449079438-CYRO9WV5NMW90NJ4I6JE/image-asset.octet-stream?format=750w 750w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449079438-CYRO9WV5NMW90NJ4I6JE/image-asset.octet-stream?format=500w 500w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449079438-CYRO9WV5NMW90NJ4I6JE/image-asset.octet-stream?format=300w 300w,
+        https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477449079438-CYRO9WV5NMW90NJ4I6JE/image-asset.octet-stream?format=100w 100w">
+    </amp-img>
+  
+</amp-carousel>
+
+
+
+
+<div class="amp-article-html-block"><p><strong>NL: </strong>You’re out of the city and studying architecture at Yale now. Are you continuing to paint and draw?</p>
+<p><strong>DB: </strong>I am still practicing art here, but I guess it depends on your definition of art. I am doing a lot of drawing (not as much painting because it is not as relative to the practice of architecture) but the drawings I am doing now serve more of a utilitarian purpose in that they are meant to convey the essence of my architectural projects. I would definitely argue that this is still an artistic form because there are infinite possibilities about how you convey your project, which will ultimately determine how the architecture is perceived. In this way it is almost just as important to have a strong representation of your building than to have a strong building itself. I am also learning to become extremely proficient with computer programs and to bring together multiple mediums in a single drawing which is exciting. I hope that after my time in architecture school I will be able to mix my skills and concepts learned from both art and architecture and find a truly intriguing and original artistic path for myself.</p></div>
+
+
+
+
+<figure class="amp-article-image-block">
+  <amp-img layout="responsive"
+    width="804"
+    height="536"
+    src="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477588480296-14B4VPKQYOFW0R7PJPI3/image-asset.jpeg?format=500w"
+    srcset="https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477588480296-14B4VPKQYOFW0R7PJPI3/image-asset.jpeg?format=2500w 2500w,
+      https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477588480296-14B4VPKQYOFW0R7PJPI3/image-asset.jpeg?format=1500w 1500w,
+      https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477588480296-14B4VPKQYOFW0R7PJPI3/image-asset.jpeg?format=1000w 1000w,
+      https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477588480296-14B4VPKQYOFW0R7PJPI3/image-asset.jpeg?format=750w 750w,
+      https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477588480296-14B4VPKQYOFW0R7PJPI3/image-asset.jpeg?format=500w 500w,
+      https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477588480296-14B4VPKQYOFW0R7PJPI3/image-asset.jpeg?format=300w 300w,
+      https://images.squarespace-cdn.com/content/v1/553d0d43e4b05ab385e2eb97/1477588480296-14B4VPKQYOFW0R7PJPI3/image-asset.jpeg?format=100w 100w">
+  </amp-img>
+  
+</figure>
+
+
+
+
+<hr class="amp-article-hr-block"/>
+
+
+
+
+<div class="amp-article-html-block"><p>For more of David's work, check out his <a target="_blank" href="http://www.davidbransfield.com/">website</a>.</p></div>
+
+
+      <footer class="amp-article-footer">
+        <p class="amp-article-original-source">
+          Discover more from <a href="http://www.thingscreatedbypeople.com/zine" target="_blank"><em>TCBP</em></a>
+        </p>
+      </footer>
+
+    </article>
+  </div>
+</body>
+</html>
